@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Galéria – Tekintsd meg a Vandlik Testvérek legszebb esküvői dekorációit és szervezéseit.">
+    <title>Galéria – Vandlik Testvérek</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar transparent" id="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">Vandlik <span>Testvérek</span></a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Főoldal</a></li>
+                <li><a href="about.html">Rólunk</a></li>
+                <li><a href="services.html">Szolgáltatások</a></li>
+                <li><a href="gallery.html" class="active">Galéria</a></li>
+                <li><a href="contact.html">Kapcsolat</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+    <div class="mobile-overlay" id="mobile-overlay"></div>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+        <div class="hero-bg" style="background-image: url('images/hero/hero-gallery.png');"></div>
+        <div class="hero-overlay"></div>
+        <div style="position: relative; z-index: 1;">
+            <p
+                style="color: var(--color-gold-light); font-family: var(--font-heading); font-style: italic; font-size: 1.1rem;">
+                Munkáinkból</p>
+            <h1>Galéria</h1>
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <p class="text-gold" style="font-family: var(--font-heading); font-style: italic;">Válogatás</p>
+                <h2>A legszebb pillanatok</h2>
+                <span class="divider"></span>
+                <p>Minden kép egy valódi esküvőről mesél – általunk megálmodva és megvalósítva.</p>
+            </div>
+
+            <!-- Filter buttons -->
+            <div class="gallery-filter animate-on-scroll">
+                <button class="active" data-filter="all">Összes</button>
+                <button data-filter="ceremony">Ceremónia</button>
+                <button data-filter="decor">Teremdekor</button>
+                <button data-filter="flowers">Virágok</button>
+                <button data-filter="outdoor">Kültéri</button>
+            </div>
+
+            <!-- Gallery grid -->
+            <div class="gallery-grid" id="gallery-grid">
+                <div class="gallery-item animate-on-scroll" data-category="ceremony">
+                    <img src="images/gallery/ceremony.png" alt="Esküvői ceremónia" loading="lazy">
+                    <div class="gallery-item-overlay"><span>Kerti ceremónia</span></div>
+                </div>
+                <div class="gallery-item animate-on-scroll" data-category="decor">
+                    <img src="images/gallery/table.png" alt="Asztaldekoráció" loading="lazy">
+                    <div class="gallery-item-overlay"><span>Elegáns terítékdísz</span></div>
+                </div>
+                <div class="gallery-item animate-on-scroll" data-category="flowers">
+                    <img src="images/gallery/flowers.png" alt="Menyasszonyi csokor" loading="lazy">
+                    <div class="gallery-item-overlay"><span>Menyasszonyi csokor</span></div>
+                </div>
+                <div class="gallery-item animate-on-scroll" data-category="outdoor">
+                    <img src="images/gallery/outdoor.png" alt="Kültéri esküvői vacsora" loading="lazy">
+                    <div class="gallery-item-overlay"><span>Kültéri vacsora</span></div>
+                </div>
+                <div class="gallery-item animate-on-scroll" data-category="decor">
+                    <img src="images/gallery/decor.png" alt="Terem dekoráció" loading="lazy">
+                    <div class="gallery-item-overlay"><span>Báltermi dekoráció</span></div>
+                </div>
+                <div class="gallery-item animate-on-scroll" data-category="decor">
+                    <img src="images/gallery/venue.png" alt="Helyszín dekoráció" loading="lazy">
+                    <div class="gallery-item-overlay"><span>Helyszín díszítés</span></div>
+                </div>
+                <div class="gallery-item animate-on-scroll" data-category="flowers">
+                    <img src="images/gallery/detail.png" alt="Asztali részlet" loading="lazy">
+                    <div class="gallery-item-overlay"><span>Asztali részlet</span></div>
+                </div>
+                <div class="gallery-item animate-on-scroll" data-category="decor">
+                    <img src="images/gallery/planning.png" alt="Tervezés" loading="lazy">
+                    <div class="gallery-item-overlay"><span>Tervezési folyamat</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close" id="lightbox-close">&times;</span>
+        <span class="lightbox-nav prev" id="lightbox-prev">&#8249;</span>
+        <span class="lightbox-nav next" id="lightbox-next">&#8250;</span>
+        <img src="" alt="Gallery image" id="lightbox-img">
+    </div>
+
+    <!-- CTA BANNER -->
+    <section class="cta-banner">
+        <div class="container animate-on-scroll">
+            <h2>Tetszik amit láttok?</h2>
+            <p>Keressetek meg minket, és álmodjuk meg együtt a ti esküvőtöket!</p>
+            <a href="contact.html" class="btn btn-gold">Kapcsolatfelvétel</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <p class="footer-brand">Vandlik <span>Testvérek</span></p>
+                    <p style="margin-top: 0.5rem; font-size: 0.85rem;">Esküvőszervezés és dekoráció szívvel és
+                        szenvedéllyel.</p>
+                </div>
+                <div>
+                    <h4>Oldalak</h4>
+                    <ul>
+                        <li><a href="index.html">Főoldal</a></li>
+                        <li><a href="about.html">Rólunk</a></li>
+                        <li><a href="services.html">Szolgáltatások</a></li>
+                        <li><a href="gallery.html">Galéria</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Szolgáltatások</h4>
+                    <ul>
+                        <li><a href="services.html">Esküvői dekoráció</a></li>
+                        <li><a href="services.html">Esküvőszervezés</a></li>
+                        <li><a href="services.html">Prémium csomag</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Elérhetőség</h4>
+                    <ul>
+                        <li><a href="tel:+36301234567">+36 30 123 4567</a></li>
+                        <li><a href="mailto:info@vandlik.hu">info@vandlik.hu</a></li>
+                        <li><a href="contact.html">Üzenetküldés</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Vandlik Testvérek. Minden jog fenntartva.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram">📷</a>
+                    <a href="#" aria-label="Facebook">📘</a>
+                    <a href="#" aria-label="Pinterest">📌</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

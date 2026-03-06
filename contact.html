@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Lépj kapcsolatba a Vandlik Testvérekkel – esküvőszervezés és dekoráció. Kérj személyre szabott ajánlatot!">
+    <title>Kapcsolat – Vandlik Testvérek</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar transparent" id="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">Vandlik <span>Testvérek</span></a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Főoldal</a></li>
+                <li><a href="about.html">Rólunk</a></li>
+                <li><a href="services.html">Szolgáltatások</a></li>
+                <li><a href="gallery.html">Galéria</a></li>
+                <li><a href="contact.html" class="active">Kapcsolat</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+    <div class="mobile-overlay" id="mobile-overlay"></div>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+        <div class="hero-bg" style="background-image: url('images/hero/hero-contact.png');"></div>
+        <div class="hero-overlay"></div>
+        <div style="position: relative; z-index: 1;">
+            <p
+                style="color: var(--color-gold-light); font-family: var(--font-heading); font-style: italic; font-size: 1.1rem;">
+                Beszéljünk!</p>
+            <h1>Kapcsolat</h1>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <p class="text-gold" style="font-family: var(--font-heading); font-style: italic;">Várjuk üzenetetek</p>
+                <h2>Vegyétek fel velünk a kapcsolatot</h2>
+                <span class="divider"></span>
+                <p>Töltsétek ki az alábbi űrlapot, és mi hamarosan válaszolunk. Személyes konzultációra is szívesen
+                    várunk!</p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- FORM -->
+                <div class="contact-form animate-on-scroll">
+                    <form id="contact-form" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Név *</label>
+                            <input type="text" id="name" name="name" placeholder="Az Ön neve" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail cím *</label>
+                            <input type="email" id="email" name="email" placeholder="pelda@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefonszám</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+36 30 123 4567">
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Esküvő tervezett dátuma</label>
+                            <input type="date" id="date" name="date">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Érdeklődés tárgya</label>
+                            <select id="service" name="service">
+                                <option value="">Kérlek válassz...</option>
+                                <option value="decoration">Esküvői dekoráció</option>
+                                <option value="planning">Esküvőszervezés</option>
+                                <option value="premium">Prémium csomag</option>
+                                <option value="other">Egyéb</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Üzenet *</label>
+                            <textarea id="message" name="message"
+                                placeholder="Írjátok le az elképzeléseiteket, kérdéseiteket..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-gold" style="width: 100%;">Üzenet küldése</button>
+                    </form>
+                </div>
+
+                <!-- CONTACT INFO -->
+                <div class="contact-info animate-on-scroll">
+                    <div class="contact-info-item">
+                        <div class="icon">📍</div>
+                        <div>
+                            <h4>Cím</h4>
+                            <p>5600 Békéscsaba, Madách utca 13.</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="icon">📞</div>
+                        <div>
+                            <h4>Telefon</h4>
+                            <p><a href="tel:+36301234567">+36 30 123 4567</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="icon">✉️</div>
+                        <div>
+                            <h4>E-mail</h4>
+                            <p><a href="mailto:info@vandlik.hu">info@vandlik.hu</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="icon">🕐</div>
+                        <div>
+                            <h4>Nyitvatartás</h4>
+                            <p>Hétfő – Péntek: 9:00 – 18:00<br>Szombat: Előzetes egyeztetéssel<br>Vasárnap: Zárva</p>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 1rem;">
+                        <h4 style="font-family: var(--font-body); font-weight: 700; margin-bottom: 0.75rem;">Kövessetek
+                            minket</h4>
+                        <div class="social-links">
+                            <a href="#" aria-label="Instagram">📷</a>
+                            <a href="#" aria-label="Facebook">📘</a>
+                            <a href="#" aria-label="Pinterest">📌</a>
+                        </div>
+                    </div>
+
+                    <!-- MAP placeholder -->
+                    <div
+                        style="margin-top: 1.5rem; border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-sm);">
+                        <iframe
+                            src="https://maps.google.com/maps?q=5600+B%C3%A9k%C3%A9scsaba,+Mad%C3%A1ch+utca+13&hl=hu&z=14&output=embed"
+                            width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" title="Vandlik Testvérek elhelyezkedés">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <p class="footer-brand">Vandlik <span>Testvérek</span></p>
+                    <p style="margin-top: 0.5rem; font-size: 0.85rem;">Esküvőszervezés és dekoráció szívvel és
+                        szenvedéllyel.</p>
+                </div>
+                <div>
+                    <h4>Oldalak</h4>
+                    <ul>
+                        <li><a href="index.html">Főoldal</a></li>
+                        <li><a href="about.html">Rólunk</a></li>
+                        <li><a href="services.html">Szolgáltatások</a></li>
+                        <li><a href="gallery.html">Galéria</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Szolgáltatások</h4>
+                    <ul>
+                        <li><a href="services.html">Esküvői dekoráció</a></li>
+                        <li><a href="services.html">Esküvőszervezés</a></li>
+                        <li><a href="services.html">Prémium csomag</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Elérhetőség</h4>
+                    <ul>
+                        <li><a href="tel:+36301234567">+36 30 123 4567</a></li>
+                        <li><a href="mailto:info@vandlik.hu">info@vandlik.hu</a></li>
+                        <li><a href="contact.html">Üzenetküldés</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Vandlik Testvérek. Minden jog fenntartva.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram">📷</a>
+                    <a href="#" aria-label="Facebook">📘</a>
+                    <a href="#" aria-label="Pinterest">📌</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
