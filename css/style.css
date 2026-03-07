@@ -476,6 +476,10 @@ p {
   gap: var(--space-md);
 }
 
+.process-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
 /* ---------- ABOUT PREVIEW ---------- */
 .about-preview {
   display: grid;
@@ -1142,6 +1146,10 @@ p {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .process-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .testimonials-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1216,6 +1224,10 @@ p {
   }
 
   .cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .process-grid {
     grid-template-columns: 1fr;
   }
 
