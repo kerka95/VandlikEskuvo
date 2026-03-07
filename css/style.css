@@ -476,7 +476,7 @@ p {
   gap: var(--space-md);
 }
 
-.process-grid {
+.cards-grid.process-grid {
   grid-template-columns: repeat(4, 1fr);
 }
 
