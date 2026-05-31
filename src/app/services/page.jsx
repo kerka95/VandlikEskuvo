@@ -14,7 +14,7 @@ export default function Services() {
       <PageHero 
         title="Szolgáltatásaink"
         subtitle="Amit kínálunk"
-        bgImage="/images/hero/hero-services.png"
+        bgImage="/VandlikEskuvo/images/hero/hero-services.png"
       />
 
       {/* SERVICE 1 - DECORATION */}
@@ -22,7 +22,7 @@ export default function Services() {
         <div className="container">
           <div className="service-detail animate-on-scroll">
             <div className="service-detail-image">
-              <Image src="/images/gallery_demo/decor.png" alt="Esküvői dekoráció" fill style={{ objectFit: "cover", borderRadius: "8px" }} sizes="(max-width: 768px) 100vw, 50vw" />
+              <Image src="/VandlikEskuvo/images/gallery_demo/decor.png" alt="Esküvői dekoráció" fill style={{ objectFit: "cover", borderRadius: "8px" }} sizes="(max-width: 768px) 100vw, 50vw" />
             </div>
             <div className="service-detail-text">
               <p className="text-gold" style={{ fontFamily: "var(--font-heading)", fontStyle: "italic" }}>01</p>
@@ -48,7 +48,7 @@ export default function Services() {
         <div className="container">
           <div className="service-detail reverse animate-on-scroll">
             <div className="service-detail-image">
-              <Image src="/images/gallery_demo/planning.png" alt="Esküvőszervezés" fill style={{ objectFit: "cover", borderRadius: "8px" }} sizes="(max-width: 768px) 100vw, 50vw" />
+              <Image src="/VandlikEskuvo/images/gallery_demo/planning.png" alt="Esküvőszervezés" fill style={{ objectFit: "cover", borderRadius: "8px" }} sizes="(max-width: 768px) 100vw, 50vw" />
             </div>
             <div className="service-detail-text">
               <p className="text-gold" style={{ fontFamily: "var(--font-heading)", fontStyle: "italic" }}>02</p>
@@ -74,7 +74,7 @@ export default function Services() {
         <div className="container">
           <div className="service-detail animate-on-scroll">
             <div className="service-detail-image">
-              <Image src="/images/gallery_demo/venue.png" alt="Prémium csomag" fill style={{ objectFit: "cover", borderRadius: "8px" }} sizes="(max-width: 768px) 100vw, 50vw" />
+              <Image src="/VandlikEskuvo/images/gallery_demo/venue.png" alt="Prémium csomag" fill style={{ objectFit: "cover", borderRadius: "8px" }} sizes="(max-width: 768px) 100vw, 50vw" />
             </div>
             <div className="service-detail-text">
               <p className="text-gold" style={{ fontFamily: "var(--font-heading)", fontStyle: "italic" }}>03</p>

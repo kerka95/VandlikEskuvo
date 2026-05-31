@@ -14,7 +14,7 @@ export default function About() {
       <PageHero 
         title="A Vandlik Testvérek"
         subtitle="Ismerjetek meg minket"
-        bgImage="/images/hero/hero-about.png"
+        bgImage="/VandlikEskuvo/images/hero/hero-about.png"
       />
 
       {/* STORY SECTION */}
@@ -22,7 +22,7 @@ export default function About() {
         <div className="container">
           <div className="about-preview animate-on-scroll">
             <div className="about-preview-image" style={{ position: "relative", minHeight: "300px" }}>
-              <Image src="/images/team/team.jpg" alt="Vandlik Testvérek" fill style={{ objectFit: "cover", borderRadius: "8px" }} sizes="(max-width: 768px) 100vw, 400px" />
+              <Image src="/VandlikEskuvo/images/team/team.jpg" alt="Vandlik Testvérek" fill style={{ objectFit: "cover", borderRadius: "8px" }} sizes="(max-width: 768px) 100vw, 400px" />
             </div>
             <div className="about-preview-text">
               <p className="text-gold" style={{ fontFamily: "var(--font-heading)", fontStyle: "italic" }}>A mi történetünk</p>
@@ -47,7 +47,7 @@ export default function About() {
           <div className="team-grid">
             <div className="team-card animate-on-scroll">
               <div className="team-card-image">
-                <Image src="/images/team/edina.jpg" alt="Vandlik Edina" fill style={{ objectFit: "cover" }} sizes="(max-width: 768px) 100vw, 350px" />
+                <Image src="/VandlikEskuvo/images/team/edina.jpg" alt="Vandlik Edina" fill style={{ objectFit: "cover" }} sizes="(max-width: 768px) 100vw, 350px" />
               </div>
               <h3>Vandlik Edina</h3>
               <p className="role">Kreatív igazgató & Dekoratőr</p>
@@ -55,7 +55,7 @@ export default function About() {
             </div>
             <div className="team-card animate-on-scroll">
               <div className="team-card-image">
-                <Image src="/images/team/marti.jpg" alt="Vandlik Márta" fill style={{ objectFit: "cover", objectPosition: "center 15%" }} sizes="(max-width: 768px) 100vw, 350px" />
+                <Image src="/VandlikEskuvo/images/team/marti.jpg" alt="Vandlik Márta" fill style={{ objectFit: "cover", objectPosition: "center 15%" }} sizes="(max-width: 768px) 100vw, 350px" />
               </div>
               <h3>Vandlik Márta</h3>
               <p className="role">Főszervező & Koordinátor</p>

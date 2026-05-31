@@ -12,7 +12,7 @@ export default function Home() {
         <div className="container">
           <div className="about-preview animate-on-scroll">
             <div className="about-preview-image" style={{ position: "relative", minHeight: "300px" }}>
-              <Image src="/images/team/team.jpg" alt="Vandlik Testvérek" fill style={{ objectFit: "cover", borderRadius: "8px" }} sizes="(max-width: 768px) 100vw, 400px" />
+              <Image src="/VandlikEskuvo/images/team/team.jpg" alt="Vandlik Testvérek" fill style={{ objectFit: "cover", borderRadius: "8px" }} sizes="(max-width: 768px) 100vw, 400px" />
             </div>
             <div className="about-preview-text">
               <p className="text-gold" style={{ fontFamily: "var(--font-heading)", fontStyle: "italic", marginBottom: "0.5rem" }}>Ismerjetek meg minket</p>
@@ -69,19 +69,19 @@ export default function Home() {
           </div>
           <div className="gallery-grid">
             <div className="gallery-item animate-on-scroll">
-              <Image src="/images/gallery/decor_3.jpeg" alt="Esküvői dekoráció" fill style={{ objectFit: "cover" }} sizes="(max-width: 768px) 100vw, 25vw" />
+              <Image src="/VandlikEskuvo/images/gallery/decor_3.jpeg" alt="Esküvői dekoráció" fill style={{ objectFit: "cover" }} sizes="(max-width: 768px) 100vw, 25vw" />
               <div className="gallery-item-overlay"><span>Esküvői dekoráció</span></div>
             </div>
             <div className="gallery-item animate-on-scroll">
-              <Image src="/images/gallery/decor_glass_2.jpeg" alt="Pohár dekoráció" fill style={{ objectFit: "cover" }} sizes="(max-width: 768px) 100vw, 25vw" />
+              <Image src="/VandlikEskuvo/images/gallery/decor_glass_2.jpeg" alt="Pohár dekoráció" fill style={{ objectFit: "cover" }} sizes="(max-width: 768px) 100vw, 25vw" />
               <div className="gallery-item-overlay"><span>Pohár dekoráció</span></div>
             </div>
             <div className="gallery-item animate-on-scroll">
-              <Image src="/images/gallery/decor_5.jpeg" alt="Esküvői dekoráció" fill style={{ objectFit: "cover" }} sizes="(max-width: 768px) 100vw, 25vw" />
+              <Image src="/VandlikEskuvo/images/gallery/decor_5.jpeg" alt="Esküvői dekoráció" fill style={{ objectFit: "cover" }} sizes="(max-width: 768px) 100vw, 25vw" />
               <div className="gallery-item-overlay"><span>Esküvői dekoráció</span></div>
             </div>
             <div className="gallery-item animate-on-scroll">
-              <Image src="/images/gallery/decor_table_4.jpeg" alt="Asztaldekoráció" fill style={{ objectFit: "cover" }} sizes="(max-width: 768px) 100vw, 25vw" />
+              <Image src="/VandlikEskuvo/images/gallery/decor_table_4.jpeg" alt="Asztaldekoráció" fill style={{ objectFit: "cover" }} sizes="(max-width: 768px) 100vw, 25vw" />
               <div className="gallery-item-overlay"><span>Asztaldekoráció</span></div>
             </div>
           </div>

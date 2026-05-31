@@ -11,7 +11,7 @@ export default function Contact() {
       <PageHero 
         title="Kapcsolat"
         subtitle="Beszéljünk!"
-        bgImage="/images/hero/hero-contact.png"
+        bgImage="/VandlikEskuvo/images/hero/hero-contact.png"
       />
 
       <section className="section">

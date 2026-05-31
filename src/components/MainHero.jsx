@@ -6,7 +6,7 @@ export default function MainHero() {
     <section className="hero" id="hero">
       <div className="hero-bg">
         <Image 
-          src="/images/hero/hero-main.png" 
+          src="/VandlikEskuvo/images/hero/hero-main.png" 
           alt="Álmaitok esküvője" 
           fill 
           priority 

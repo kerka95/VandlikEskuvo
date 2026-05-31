@@ -17,7 +17,7 @@ export default function Gallery() {
     const files = fs.readdirSync(galleryDir);
     images = files
       .filter(file => /\.(jpg|jpeg|png|webp|gif)$/i.test(file))
-      .map(file => `/images/gallery/${file}`);
+      .map(file => `/VandlikEskuvo/images/gallery/${file}`);
   } catch (error) {
     console.error('Hiba a galéria képek beolvasásakor:', error);
   }
@@ -27,7 +27,7 @@ export default function Gallery() {
       <PageHero 
         title="Galéria"
         subtitle="Munkáinkból"
-        bgImage="/images/hero/hero-gallery.png"
+        bgImage="/VandlikEskuvo/images/hero/hero-gallery.png"
       />
 
       <section className="section">
