@@ -1,7 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export'
-  /* config options here */
+  output: 'export',
+  basePath: '/VandlikEskuvo',
+  images: {
+    unoptimized: true,
+  },
 };
 
 export default nextConfig;

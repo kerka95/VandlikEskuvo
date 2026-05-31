@@ -1,8 +1,7 @@
 export const dynamic = "force-static";
 
 export default function sitemap() {
-  // TODO: Cseréld ki a valós domain névre, ha megvan
-  const baseUrl = 'https://vandliktestverek.hu'; 
+  const baseUrl = 'https://kerka95.github.io/VandlikEskuvo'; 
 
   return [
     {
