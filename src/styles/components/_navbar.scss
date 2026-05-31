@@ -1,0 +1,128 @@
+/* ---------- NAVBAR ---------- */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--nav-height);
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+  transition: background var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.navbar.transparent {
+  background: transparent;
+}
+
+.navbar.scrolled {
+  background: rgba(253, 248, 245, 0.97);
+  box-shadow: var(--shadow-sm);
+  backdrop-filter: blur(10px);
+}
+
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-brand {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: color var(--transition-fast);
+}
+
+.navbar.transparent .navbar-brand {
+  color: var(--color-white);
+}
+
+.navbar.scrolled .navbar-brand {
+  color: var(--color-dark);
+}
+
+.navbar-brand span {
+  color: var(--color-gold);
+}
+
+.nav-links {
+  display: flex;
+  gap: var(--space-md);
+  align-items: center;
+}
+
+.nav-links a {
+  font-size: var(--fs-small);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.navbar.transparent .nav-links a {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.navbar.scrolled .nav-links a {
+  color: var(--color-dark);
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--color-gold);
+  transition: width var(--transition-normal);
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  width: 100%;
+}
+
+.nav-links a:hover {
+  color: var(--color-gold);
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  width: 28px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.hamburger span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: var(--color-dark);
+  border-radius: 2px;
+  transition: all var(--transition-fast);
+}
+
+.navbar.transparent .hamburger span {
+  background: var(--color-white);
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translateY(5px) translateX(5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-5px) translateX(5px);
+}
+

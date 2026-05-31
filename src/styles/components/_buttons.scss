@@ -1,0 +1,57 @@
+/* ---------- BUTTONS ---------- */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-xs);
+  padding: 14px 36px;
+  font-size: var(--fs-small);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: var(--radius-pill);
+  transition: all var(--transition-normal);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-gold {
+  background: var(--color-gold);
+  color: var(--color-white);
+  border: 2px solid var(--color-gold);
+}
+
+.btn-gold:hover {
+  background: var(--color-gold-dark);
+  border-color: var(--color-gold-dark);
+  box-shadow: var(--shadow-gold);
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--color-white);
+  border: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+.btn-outline:hover {
+  background: var(--color-white);
+  color: var(--color-dark);
+  border-color: var(--color-white);
+  transform: translateY(-2px);
+}
+
+.btn-outline-dark {
+  background: transparent;
+  color: var(--color-gold);
+  border: 2px solid var(--color-gold);
+}
+
+.btn-outline-dark:hover {
+  background: var(--color-gold);
+  color: var(--color-white);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-gold);
+}
+

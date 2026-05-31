@@ -1,0 +1,111 @@
+/* ---------- ABOUT PAGE ---------- */
+
+.page-hero {
+  height: 50vh;
+  min-height: 350px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 var(--space-md);
+  overflow: hidden;
+}
+
+.page-hero .hero-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  z-index: -2;
+}
+
+.page-hero .hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: var(--color-overlay);
+  z-index: -1;
+}
+
+.page-hero h1 {
+  color: var(--color-white);
+  font-size: var(--fs-h1);
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+.page-hero p {
+  color: var(--color-gold-light);
+  font-family: var(--font-heading);
+  font-style: italic;
+}
+
+/* Team grid */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-md);
+}
+
+.team-card {
+  text-align: center;
+}
+
+.team-card-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto var(--space-sm);
+  border: 3px solid var(--color-gold-light);
+  box-shadow: var(--shadow-md);
+  position: relative;
+}
+
+.team-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team-card h3 {
+  margin-bottom: 4px;
+}
+
+.team-card .role {
+  color: var(--color-gold);
+  font-size: var(--fs-small);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: var(--space-xs);
+}
+
+.team-card p {
+  color: var(--color-grey);
+  font-size: var(--fs-small);
+}
+
+/* Stats row */
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-md);
+  text-align: center;
+  padding: var(--space-lg) 0;
+}
+
+.stat-item .number {
+  font-family: var(--font-heading);
+  font-size: var(--fs-h1);
+  color: var(--color-gold);
+  display: block;
+}
+
+.stat-item .label {
+  font-size: var(--fs-small);
+  color: var(--color-grey);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}

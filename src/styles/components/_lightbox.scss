@@ -1,0 +1,66 @@
+/* ---------- LIGHTBOX ---------- */
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.92);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--transition-normal);
+}
+
+.lightbox.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 85vh;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-lg);
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: var(--color-white);
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 2001;
+  transition: color var(--transition-fast);
+}
+
+.lightbox-close:hover {
+  color: var(--color-gold);
+}
+
+.lightbox-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-white);
+  font-size: 2.5rem;
+  cursor: pointer;
+  padding: var(--space-sm);
+  transition: color var(--transition-fast);
+  user-select: none;
+}
+
+.lightbox-nav:hover {
+  color: var(--color-gold);
+}
+
+.lightbox-nav.prev {
+  left: 20px;
+}
+
+.lightbox-nav.next {
+  right: 20px;
+}
+

@@ -1,0 +1,46 @@
+/* ---------- TESTIMONIALS ---------- */
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+}
+
+.testimonial-card {
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  box-shadow: var(--shadow-sm);
+  text-align: center;
+  position: relative;
+}
+
+.testimonial-card::before {
+  content: '„';
+  font-family: var(--font-heading);
+  font-size: 4rem;
+  color: var(--color-blush);
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  line-height: 1;
+}
+
+.testimonial-card blockquote {
+  font-style: italic;
+  color: var(--color-grey);
+  margin-bottom: var(--space-sm);
+  font-size: var(--fs-body);
+  line-height: 1.8;
+}
+
+.testimonial-card .author {
+  font-weight: 700;
+  color: var(--color-dark);
+}
+
+.testimonial-card .date {
+  font-size: var(--fs-tiny);
+  color: var(--color-grey);
+}
+
