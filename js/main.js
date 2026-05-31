@@ -108,33 +108,6 @@ document.addEventListener('DOMContentLoaded', () => {
         counters.forEach(counter => counterObserver.observe(counter));
     }
 
-    // ---------- GALLERY FILTER ----------
-    const filterButtons = document.querySelectorAll('.gallery-filter button');
-    const galleryItems = document.querySelectorAll('.gallery-item[data-category]');
-
-    filterButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            // Update active button
-            filterButtons.forEach(btn => btn.classList.remove('active'));
-            button.classList.add('active');
-
-            const filter = button.getAttribute('data-filter');
-
-            galleryItems.forEach(item => {
-                if (filter === 'all' || item.getAttribute('data-category') === filter) {
-                    item.style.display = '';
-                    // Re-trigger animation
-                    item.classList.remove('visible');
-                    requestAnimationFrame(() => {
-                        item.classList.add('visible');
-                    });
-                } else {
-                    item.style.display = 'none';
-                }
-            });
-        });
-    });
-
     // ---------- LIGHTBOX ----------
     const lightbox = document.getElementById('lightbox');
     const lightboxImg = document.getElementById('lightbox-img');
