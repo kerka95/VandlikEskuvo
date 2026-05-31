@@ -23,7 +23,7 @@ export const metadata = {
   title: 'Vandlik Testvérek – Esküvőszervezés & Dekoráció',
   description: 'Személyre szabott esküvőszervezés és lenyűgöző dekoráció a Vandlik testvérektől.',
   icons: {
-    icon: '/vfavicon.svg',
+    icon: '/VandlikEskuvo/vfavicon.svg',
   },
   openGraph: {
     title: 'Vandlik Testvérek – Esküvőszervezés & Dekoráció',

@@ -3,7 +3,8 @@ const nextConfig = {
   output: 'export',
   basePath: '/VandlikEskuvo',
   images: {
-    unoptimized: true,
+    loader: 'custom',
+    loaderFile: './src/imageLoader.js',
   },
 };
 
